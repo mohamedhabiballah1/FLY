@@ -225,21 +225,20 @@ h2 {
   position: relative;
   border-radius: 5rem;
 }
-.home .videoDiv {
+.home .homeImages .videoDiv {
   width: 100%;
 }
-.home .videoDiv .video {
+.home .homeImages .videoDiv .video {
   border-radius: 10rem;
 }
-.home .plane {
+.home .homeImages .plane {
   position: absolute;
   width: 100%;
-  top: -10%;
 }
 
 .search .sectionContainer {
   width: 100%;
-  padding: 1.5rrem;
+  padding: 1.5rem;
   border: 2px solid var(--greyBg);
   border-radius: 16px;
   row-gap: 2rem;
@@ -307,11 +306,386 @@ h2 {
   opacity: 0.5;
 }
 
-.support .sectionContainer .infoDiv .imgDiv {
-  align-items: center;
-  flex-direction: row;
+.support .sectionContainer .tittlesDiv {
+  text-align: center;
 }
-.support .sectionContainer .infoDiv .imgDiv .supportImg {
+.support .sectionContainer .tittlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
+.support .sectionContainer .infoDiv {
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+  background: var(--Primary-color);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne {
+  background: var(--colorOne);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorTwo {
+  background: var(--colorTwo);
+}
+.support .sectionContainer .infoDiv .imgDiv {
+  margin: auto;
+}
+.support .sectionContainer .infoDiv .imgDiv img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.info {
+  background: var(--Secondary-color);
+}
+.info .infoConrtainer .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.info .infoConrtainer .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .infoConrtainer .cardsDiv .singleCard {
+  background: var(--whiteColor);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.info .infoConrtainer .cardsDiv .singleCard .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background: var(--Primary-color);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info .infoConrtainer .cardsDiv .singleCard .iconDiv .icon {
+  color: var(--whiteColor);
+}
+.info .infoConrtainer .cardsDiv .singleCard .cardTittle {
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.info .infoConrtainer .cardsDiv .singleCard .colorOne {
+  background-color: var(--colorOne);
+}
+.info .infoConrtainer .cardsDiv .singleCard .colorTwo {
+  background-color: var(--colorTwo);
+}
+
+.lounge .sectionContainer {
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 5rem;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleCard .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+.travelers .sectionContainer {
+  text-align: center;
+}
+.travelers .sectionContainer .travelersContainer {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave {
+  position: relative;
+  height: 320px;
+  width: 85%;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .destinationImage, .travelers .sectionContainer .travelersContainer .singleTrave .travelerImage, .travelers .sectionContainer .travelersContainer .singleTrave .travelerName {
+  position: absolute;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .destinationImage {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .travelerImage {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 40%;
+  transform: translateX(-50%);
+  border: 5px solid rgba(255, 255, 255, 0.637);
+  transition: var(--transition);
+  animation: animated 2.3s infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .travelerName {
+  bottom: -100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--whiteColor);
+  padding: 1.5rem;
+  transition: var(--transition);
+  animation: animatedBorderes 2.3s infinite;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .travelerName span {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave .travelerName p {
+  color: var(--Primary-color);
+  font-style: italic;
+}
+@keyframes animatedBorderes {
+  0% {
+    border-radius: 0rem;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+  100% {
+    border-radius: 0rem;
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTrave:hover .travelerName {
+  bottom: 0;
+  transition: 1s ease-in-out;
+}
+.travelers .sectionContainer .travelersContainer .singleTrave:hover .travelerImage {
+  bottom: 110px;
+  transition: 1s ease-in-out;
+}
+
+.subsribers {
+  background: var(--Secondary-color);
+}
+.subsribers .sectionContainer {
+  text-align: center;
+}
+.subsribers .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+}
+.subsribers .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subsribers .sectionContainer .inputDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subsribers .sectionContainer .inputDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subsribers .sectionContainer .inputDiv .btn {
+  width: 100%;
+}
+
+.footer {
+  background: var(--Secondary-color);
+}
+.footer .sectionContainer {
+  gap: 2.5rem;
+}
+.footer .sectionContainer .gridOne {
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+}
+.footer .sectionContainer .gridOne .logoDiv .Logo {
   width: 20%;
-  border-radius: 500px;
+}
+.footer .sectionContainer .gridOne .socialIcon {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer .sectionContainer .gridOne .socialIcon .icon {
+  height: 50px;
+  width: 30px;
+  border-radius: 10rem;
+  border: 1px solid var(--borderColor);
+  box-shadow: var(--boxShadow);
+  padding: 0.4rem;
+  color: var(--greyText);
+}
+.footer .sectionContainer .gridOne .socialIcon .icon:hover {
+  background: var(--Primary-color);
+  transform: translateY(-7px);
+  transition: var(--transition);
+  border: 1px solid var(--Primary-color);
+  color: var(--whiteColor);
+}
+.footer .sectionContainer .footerLinks {
+  display: grid;
+}
+.footer .sectionContainer .footerLinks .linkTittle {
+  color: var(--blackColor);
+  font-weight: 500;
+  display: block;
+  padding-bottom: 1rem;
+}
+.footer .sectionContainer .footerLinks li a {
+  display: block;
+  color: var(--greyText);
+  transition: var(--transition);
+  padding: 0.3rem 0;
+}
+.footer .sectionContainer .footerLinks li ahover {
+  transform: translateX(7px);
+  color: var(--Primary-color);
+}
+.footer .copyRightDiv {
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-top: 1px solid var(--greyText);
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .home {
+    padding-top: 12rem;
+  }
+  .search .sectionContainer .searchInput {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subsribers .sectionContainer {
+    max-width: 80%;
+    margin: auto;
+  }
+  .subsribers .sectionContainer .inputDiv {
+    flex-direction: row;
+    padding: 0 0.5rem;
+    border-radius: 3rem;
+  }
+  .footer .sectionContainer {
+    align-items: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .sectionContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 570px) {
+  .home .mainText {
+    width: 80%;
+  }
+  .home .homeImages .video {
+    border-radius: 15rem;
+  }
+  .home .homeImages .plane {
+    position: absolute;
+    width: 95%;
+    top: -8%;
+  }
+  .search .sectionContainer .btns {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fd);
+  }
+  .info .infoConrtainer .titleDiv {
+    flex-direction: row;
+  }
+  .info .infoConrtainer .titleDiv h2 {
+    margin-left: 15px;
+    text-align: left;
+    max-width: 500px;
+  }
+  .info .infoConrtainer .cardsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subsribers .sectionContainer .inputDiv {
+    justify-content: space-between;
+  }
+  .subsribers .sectionContainer .inputDiv .btn {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .footer .sectionContainer {
+    padding-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 680px) {
+  .home .mainText {
+    width: 80%;
+  }
+  .home .homeImages .videoDiv {
+    width: 80%;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    border-radius: 15rem;
+  }
 }/*# sourceMappingURL=main.css.map */

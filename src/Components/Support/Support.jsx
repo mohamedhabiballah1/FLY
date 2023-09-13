@@ -2,9 +2,7 @@ import React from 'react'
 
 // Imported Images
 
-import  image1 from '../../assets/supportimg1.png'
-import  image2 from '../../assets/supportimg2.png'
-import  image3 from '../../assets/supportimg3.png'
+import  supImg from '../../assets/support.png'
 
 
 const Support = () => {
@@ -28,7 +26,7 @@ const Support = () => {
             </div>
 
             <div className="singleInfo">
-              <span className='number'>02</span>
+              <span className='number colorOne'>02</span>
               <h4>Chauffeur services at your arrival</h4>
               <p>
                 Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!
@@ -36,7 +34,7 @@ const Support = () => {
             </div>
 
             <div className="singleInfo">
-              <span className='number'>03</span>
+              <span className='number colorTwo'>03</span>
               <h4>Multi-risk travel insurance</h4>
               <p>
                 Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!
@@ -45,9 +43,7 @@ const Support = () => {
           </div>
 
           <div className="imgDiv flex">
-            <img src={image1} className='supportImg'/>
-            <img src={image2} className='supportImg'/>
-            <img src={image3} className='supportImg'/>
+            <img src={supImg}/>
           </div>
         </div>
       </div>
