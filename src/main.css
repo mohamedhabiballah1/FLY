@@ -723,7 +723,7 @@ h2 {
   .home .homeImages .plane {
     width: -moz-max-content;
     width: max-content;
-    height: 200px;
+    height: 350px;
   }
   .navBar {
     align-items: center;
@@ -855,7 +855,7 @@ h2 {
     padding: 6rem 0 4rem;
   }
   .container {
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
   .navBar .navBarOne, .navBar .navBarTwo {
