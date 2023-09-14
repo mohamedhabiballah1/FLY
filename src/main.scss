@@ -712,9 +712,7 @@ h2 {
 
         .homeImages{
             .plane{
-                padding-top: 5rem;
-                width: max-content;
-                height: 270px;
+                display: none;
             }
         }
     }
@@ -893,6 +891,7 @@ h2 {
     .home{
         .homeImages{
             .plane{
+                display: block;
                 width: max-content;
                 height: 350px;
             }
