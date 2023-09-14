@@ -3,7 +3,7 @@ import React ,{ useEffect } from 'react'
 //Import Destinations Images
 import paris from '../../assets/paris.png'
 import london from '../../assets/london.png'
-import newYork from '../../assets/newYork.png'
+import newYork from '../../assets/newyork.png'
 import dubai from '../../assets/dubai.png'
 
 //Import Travelers Images
