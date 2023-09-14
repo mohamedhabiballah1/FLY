@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Imported Images
-
 import  supImg from '../../assets/support.png'
 
+//Import AOS
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Support = () => {
+  useEffect(() => {
+      Aos.init({duration:2000})
+    }, [])
   return (
     <div className="support container section">
       <div className="sectionContainer">
@@ -17,7 +22,7 @@ const Support = () => {
 
         <div className="infoDiv grid">
           <div className="textDiv grid">
-            <div className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='1000' className="singleInfo">
               <span className='number'>01</span>
               <h4>Travel requirements for Dubai</h4>
               <p>
@@ -25,7 +30,7 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='1500' className="singleInfo">
               <span className='number colorOne'>02</span>
               <h4>Chauffeur services at your arrival</h4>
               <p>
@@ -33,7 +38,7 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='2000' className="singleInfo">
               <span className='number colorTwo'>03</span>
               <h4>Multi-risk travel insurance</h4>
               <p>
@@ -42,7 +47,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div className="imgDiv flex">
+          <div data-aos='fade-left' data-aos-duration='1000' className="imgDiv flex">
             <img src={supImg}/>
           </div>
         </div>

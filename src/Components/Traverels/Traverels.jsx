@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{ useEffect } from 'react'
 
 //Import Destinations Images
 import paris from '../../assets/paris.png'
@@ -12,6 +12,9 @@ import traveler2 from '../../assets/user2.png'
 import traveler3 from '../../assets/user1.png'
 import traveler4 from '../../assets/user4.png'
 
+//Import AOS
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const travelers =[
   {
@@ -45,17 +48,20 @@ const travelers =[
 ]
 
 const Traverels = () => {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  }, [])
   return (
     <div className='travelers container section'>
       <div className="sectionContainer">
-        <h2>
+        <h2 data-aos='fade-up' data-aos-duration='2500'>
           Top travelers of this month
         </h2>
         <div className="travelersContainer grid">
           {
             travelers.map(({id, destinationImage, travelerImage, travelerName, socialLink}) =>{
               return(
-                  <div key={id} className="singleTrave">
+                  <div data-aos='fade-up' data-aos-duration='2500' key={id} className="singleTrave">
                     <img src={destinationImage} className='destinationImage'/>
                     <div className="travelerDetail">
                       <div className="travelerPicture">
