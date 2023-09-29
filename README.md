@@ -7,5 +7,5 @@ Welcome to Fly Agency, a stylish and responsive web application built with React
 
 
 ## Website
-Explore the project by visiting the [[Fly Agency Website](https://example.com)](https://fly-agency.netlify.app/)https://fly-agency.netlify.app/.
+Explore the project by visiting the [Fly Agency Website](https://fly-agency.netlify.app/).
 
